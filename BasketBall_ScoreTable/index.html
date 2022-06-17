@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h3>HOME</h3>
+        <h2 class="both-score" id="home-score">0</h2>
+        <div>
+          <button
+            class="home-buttons"
+            id="home-score-btn-1"
+            onclick="increaseHomeScoreOne()"
+          >
+            +1
+          </button>
+          <button
+            class="home-buttons"
+            id="home-score-btn-2"
+            onclick="increaseHomeScoreTwo()"
+          >
+            +2
+          </button>
+          <button
+            class="home-buttons"
+            id="home-score-btn-3"
+            onclick="increaseHomeScoreThree()"
+          >
+            +3
+          </button>
+        </div>
+      </div>
+      <div>
+        <h3>TIME:</h3>
+        <p id="countdown"></p>
+      </div>
+      <div class="column">
+        <h3>GUEST</h3>
+        <h2 class="both-score" id="guest-score">0</h2>
+        <div>
+          <button
+            class="guest-buttons"
+            id="guest-score-btn-1"
+            onclick="increaseGuestScoreOne()"
+          >
+            +1
+          </button>
+          <button
+            class="guest-buttons"
+            id="guest-score-btn-2"
+            onclick="increaseGuestScoreTwo()"
+          >
+            +2
+          </button>
+          <button
+            class="guest-buttons"
+            id="guest-score-btn-3"
+            onclick="increaseGuestScoreThree()"
+          >
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="play-again">
+      <h3>PLAY AGAIN!</h3>
+      <button id="reset-btn" onclick="resetBothScores()">RESET SCORE</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
